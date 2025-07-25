@@ -7,6 +7,8 @@
 	import HeroSectionAbout from '$lib/about/components/hero-section.svelte';
 	import NumberSection from '$lib/home/components/number-section.svelte';
 	import WhyUs from '$lib/about/components/why-us.svelte';
+	import HomeServiceSection from '$lib/service/components/service.svelte';
+	import LogoSection from '$lib/home/components/logo-section.svelte';
 </script>
 
 <div class="min-h-full">
@@ -21,8 +23,12 @@
 	<div>
 		<WhyUs />
 	</div>
+	
 	<div>
 		<NumberSection />
+	</div>
+	<div>
+		<LogoSection />
 	</div>
 	<div>
 		<TestimonialCard />

@@ -94,7 +94,7 @@
 				<Button
 					appearance="primary"
 					iconPath={mdiPhone}
-					label="+1(917)633-7525 / +917995662228"
+					label="+917995662228"
 					className="rounded-full px-8 font-bold"
 				/>
 			</div>
