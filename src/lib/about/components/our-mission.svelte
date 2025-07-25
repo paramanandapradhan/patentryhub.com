@@ -72,7 +72,7 @@
 	<div
 		class="px-4 py-16 md:px-16 lg:px-32 text-white bg-cover bg-center bg-no-repeat"
 		style="
-			background-image: url('imgs/about-background.avif');
+			background-image: url('imgs/home-img1.avif');
 			background-size: 120% 120%;
 			background-blend-mode: multiply;
 			background-color: rgba(0,0,0,0.7);

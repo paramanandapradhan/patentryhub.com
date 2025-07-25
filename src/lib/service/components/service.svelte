@@ -2,9 +2,9 @@
 	import ServiceCard from './service-card.svelte';
 </script>
 
-<div class="h-full w-full items-center px-4 md:px-16 lg:px-32">
+<div class="h-full w-full items-center mx-auto max-w-7xl px-6 lg:px-8 pb-32 pt-24 sm:pt-32">
 	<!-- Heading Section -->
-	<div class="pt-24 text-center md:pt-32">
+	<div class="text-center">
 		<h4 class="mb-6 text-lg font-medium uppercase tracking-widest text-primary-500 lg:mb-12">
 			Our Service
 		</h4>

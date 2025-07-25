@@ -66,14 +66,32 @@
 	});
 </script>
 
-<div class="mx-4 my-6 min-h-screen sm:mx-8 sm:my-8 md:mx-16 md:my-12 lg:mx-32">
+<div class="relative isolate bg-white mx-4 my-6 min-h-screen sm:mx-8 sm:my-8 md:mx-16 md:my-12 lg:mx-32">
+	<div
+		aria-hidden="true"
+		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+	>
+		<div
+			style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+			class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+		></div>
+	</div>
+	<div
+		aria-hidden="true"
+		class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+	>
+		<div
+			style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+		></div>
+	</div>
 	<h1
 		class="heading mb-6 text-2xl font-extrabold text-base-800 sm:mb-8 sm:text-3xl md:mb-10 md:text-4xl"
 	>
 		Who We Are
 	</h1>
 	<div
-		class=" max-w-full rounded-lg bg-white/80 px-4 py-4 shadow-xl backdrop-blur-sm sm:px-6 sm:py-6 md:px-10 md:py-10 lg:px-16 lg:py-16"
+		class=" max-w-full  px-4 py-4  sm:px-6 sm:py-6 md:px-10 md:py-10 lg:px-16 lg:py-16"
 	>
 		<div class="grid grid-cols-1 items-center gap-4 sm:gap-6 md:grid-cols-2 md:gap-8">
 			<div class="order-1 lg:order-2">
