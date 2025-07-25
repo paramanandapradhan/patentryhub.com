@@ -9,6 +9,22 @@
 	import WhyUs from '$lib/about/components/why-us.svelte';
 	import HomeServiceSection from '$lib/service/components/service.svelte';
 	import LogoSection from '$lib/home/components/logo-section.svelte';
+	import { openContactDialog } from '$lib/home/service';
+	import { onMount } from 'svelte';
+
+	async function handleOpenContactForm() {
+		await openContactDialog();
+	}
+
+	// onMount(() => {
+	// 	let timer = setTimeout(() => {
+	// 		handleOpenContactForm();
+	// 	}, 3000); // show after 3 second
+
+	// 	return() => {
+	// 		clearTimeout(timer); // cleanup on component destroy
+	// 	}
+	// });
 </script>
 
 <div class="min-h-full">
@@ -23,7 +39,7 @@
 	<div>
 		<WhyUs />
 	</div>
-	
+
 	<div>
 		<NumberSection />
 	</div>

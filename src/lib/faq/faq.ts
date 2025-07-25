@@ -1,42 +1,42 @@
 export const faqData = [
-	{
-		title: "What is Lampvolt?",
-		content: "<p>Lampvolt is a leading manufacturer and seller of high-quality water pumps, including Tulu, jet, and submersible pumps, designed for reliable water management solutions.</p>"
-	},
-	{
-		title: "What types of pumps does Lampvolt offer?",
-		content: "<p>Lampvolt offers a range of pumps, including Tulu pumps for household use, jet pumps for high-pressure applications, and submersible pumps for deep-well water extraction, all backed by a 1-year warranty.</p>"
-	},
-	{
-		title: "What is the warranty period for Lampvolt pumps?",
-		content: "<p>Every Lampvolt pump, including Tulu, jet, and submersible models, comes with a comprehensive 1-year warranty covering manufacturing defects.</p>"
-	},
-	{
-		title: "How does Lampvolt ensure product quality?",
-		content: "<p>Lampvolt uses advanced manufacturing processes and rigorous quality testing to ensure our Tulu, jet, and submersible pumps deliver exceptional performance and durability.</p>"
-	},
-	{
-		title: "Are Lampvolt pumps suitable for agricultural use?",
-		content: "<p>Yes, our submersible and jet pumps are ideal for agricultural irrigation, providing efficient water delivery for farms of all sizes, with a 1-year warranty for peace of mind.</p>"
-	},
-	{
-		title: "Can Lampvolt pumps be used for residential water supply?",
-		content: "<p>Absolutely! Our Tulu pumps are designed for household water supply, offering reliable performance for homes, backed by a 1-year warranty.</p>"
-	},
-	{
-		title: "How can I get support for my Lampvolt pump?",
-		content: "<p>Lampvolt offers dedicated customer support. Contact our team via our website or call our helpline for assistance with your Tulu, jet, or submersible pump.</p>"
-	},
-	{
-		title: "Are replacement parts available for Lampvolt pumps?",
-		content: "<p>Yes, Lampvolt provides genuine replacement parts for all our pumps, ensuring long-term reliability and compatibility, with a 1-year warranty on parts.</p>"
-	},
-	{
-		title: "Can Lampvolt pumps be installed by end-users?",
-		content: "<p>While our Tulu and jet pumps are user-friendly for installation, we recommend professional installation for submersible pumps to ensure optimal performance and warranty validity.</p>"
-	},
-	{
-		title: "How do I claim the warranty for my Lampvolt pump?",
-		content: "<p>To claim the 1-year warranty, register your Tulu, jet, or submersible pump on our website and contact our support team with your purchase details for prompt assistance.</p>"
-	}
+  {
+    title: "What are Utility Patent Drawings?",
+    content: "<p>Utility patent drawings illustrate the technical structure and functionality of an invention. They are created to meet patent office requirements, ensuring accuracy and consistency to support your patent application and reduce the risk of rejections.</p>"
+  },
+  {
+    title: "How do Design Patent Drawings differ from Utility Patent Drawings?",
+    content: "<p>Design patent drawings focus on the visual appearance of a product, including all required views (front, back, side, top, bottom, perspective) with precision. Unlike utility drawings, they emphasize aesthetics over functionality, adhering to strict formatting rules for design patent filings.</p>"
+  },
+  {
+    title: "What standards do your Trademark Illustrations follow?",
+    content: "<p>Our trademark illustrations comply with global trademark office standards, providing clean and precise drawings for wordmarks, logos, symbols, or combination marks. We offer black-and-white, grayscale, or stylized versions to ensure smooth registration.</p>"
+  },
+  {
+    title: "Can you create a logo that is ready for trademark filing?",
+    content: "<p>Yes, our logo design services produce IP-compliant logos tailored for trademark registration. We provide multiple concepts, refined drafts, and final versions in standard formats to support your branding and legal needs.</p>"
+  },
+  {
+    title: "What types of Flowcharts do you create?",
+    content: "<p>We create professional flowcharts for software logic, business processes, or patent method claims. Using industry-standard symbols and clean designs, our charts are suitable for patent applications, documentation, or presentations.</p>"
+  },
+  {
+    title: "How are System Architecture Diagrams useful for patent filings?",
+    content: "<p>System architecture diagrams clearly depict the interaction of components, layers, or modules in software, hardware, or cloud-based systems. They enhance patent applications, whitepapers, and presentations by providing a structured visual representation.</p>"
+  },
+  {
+    title: "What are Schematic Diagrams, and what do they include?",
+    content: "<p>Schematic diagrams represent electrical and electronic systems, including circuits, wiring layouts, and component symbols. Our schematics are clean, technically accurate, and aligned with global standards for patent filings or product development.</p>"
+  },
+  {
+    title: "What formats are available for Mechanical CAD Drawings?",
+    content: "<p>Our mechanical and engineering CAD drawings are available in multiple formats, including 2D and 3D models. We create detailed drawings from sketches, images, or concepts, fully dimensioned for patent filings or prototyping.</p>"
+  },
+  {
+    title: "Can you help reduce patent application rejections?",
+    content: "<p>Yes, our utility and design patent drawings are crafted to meet patent office requirements, ensuring clarity and compliance. This precision helps examiners understand your invention, minimizing the likelihood of office actions or rejections.</p>"
+  },
+  {
+    title: "How do I provide input for custom Flowcharts or CAD Drawings?",
+    content: "<p>Simply provide your sketches, images, steps, or outlines, and we’ll transform them into professional, publish-ready flowcharts or CAD drawings. We work closely with you to ensure the output matches your technical vision and application needs.</p>"
+  }
 ];

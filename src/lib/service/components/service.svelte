@@ -1,18 +1,81 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import ServiceCard from './service-card.svelte';
+	import gsap from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+	// Register ScrollTrigger plugin
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		// Animate the headings (h1 and h4)
+		gsap.from('.service-heading-h4', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			scrollTrigger: {
+				trigger: '.service-heading-h4',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
+
+		gsap.from('.service-heading-h1', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			scrollTrigger: {
+				trigger: '.service-heading-h1',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
+
+		// Animate each service card individually
+		const cards = document.querySelectorAll('.service-card');
+		cards.forEach((card, index) => {
+			gsap.fromTo(
+				card,
+				{
+					opacity: 0,
+					y: 100 // Start 100px below
+				},
+				{
+					opacity: 1,
+					y: 0,
+					duration: 0.8, // Smooth duration
+					ease: 'power2.out', // Dynamic easing for engaging motion
+					scrollTrigger: {
+						trigger: card, // Each card is its own trigger
+						start: 'top 80%', // Start when card is 80% in viewport
+						toggleActions: 'play none none none'
+					}
+				}
+			);
+		});
+
+		// Cleanup ScrollTrigger on component destroy
+		return () => {
+			ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+		};
+	});
 </script>
 
-<div class="h-full w-full items-center mx-auto max-w-7xl px-6 lg:px-8 pb-32 pt-24 sm:pt-32">
+<div class="mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
 	<!-- Heading Section -->
 	<div class="text-center">
-		<h4 class="mb-6 text-lg font-medium uppercase tracking-widest text-primary-500 lg:mb-12">
-			Our Service
+		<h4
+			class="service-heading-h4 my-4 text-lg font-medium uppercase tracking-widest text-primary-500 md:my-6 "
+		>
+			Our Services
 		</h4>
-		<!-- <h1 class="my-4 text-2xl font-black leading-tight text-base-800 md:my-6 md:text-4xl">
-			Get In Touch With an <br /> Expert
-		</h1> -->
+		<h1 class="service-heading-h1 mb-6 lg:mb-20 text-2xl font-black leading-tight text-base-800 md:text-4xl">
+			Discover Expert Solutions for Your IP Needs
+		</h1>
 	</div>
-	<div>
+	<div class="service-card">
 		<ServiceCard
 			title="Utility Patent Drawings"
 			content1="Our utility patent drawings clearly illustrate the technical structure and functionality of your invention. We follow all formal patent office requirements, ensuring your figures are accurate, consistent, and professionally laid out."
@@ -22,7 +85,7 @@
 			imageClass="order-2 lg:order-1"
 		/>
 	</div>
-	<div class="my-8">
+	<div class="service-card my-8">
 		<ServiceCard
 			title="Design Patent Drawings"
 			content1="Design patents focus on how a product looks — and we make sure your design is captured in perfect detail. Our design patent drawings include all required views (front, back, side, top, bottom, perspective) with precision and clarity."
@@ -32,7 +95,7 @@
 			imageClass="order-1 lg:order-2"
 		/>
 	</div>
-	<div>
+	<div class="service-card">
 		<ServiceCard
 			title="Trademark & Branding Illustrations"
 			content1="Trademark drawings must follow specific standards to be accepted during registration. We prepare clean, precise trademark illustrations whether you’re filing a wordmark, logo, symbol, or combination mark."
@@ -42,7 +105,7 @@
 			imageClass="order-2 lg:order-1"
 		/>
 	</div>
-	<div class="my-8">
+	<div class="service-card my-8">
 		<ServiceCard
 			title="Logo Design"
 			content1="A strong logo is the foundation of your brand. We offer custom logo design services that balance creativity and professionalism — with the added benefit of making them IP-compliant and ready for trademark filing."
@@ -52,7 +115,7 @@
 			imageClass="order-1 lg:order-2"
 		/>
 	</div>
-	<div>
+	<div class="service-card">
 		<ServiceCard
 			title="Flowcharts"
 			content1="Flowcharts are essential for explaining software logic, business processes, or patent method claims. We create professional, logically structured charts using industry-standard symbols and clean design."
@@ -62,7 +125,7 @@
 			imageClass="order-2 lg:order-1"
 		/>
 	</div>
-	<div class="my-8">
+	<div class="service-card my-8">
 		<ServiceCard
 			title="System Architecture Diagrams"
 			content1="Our system architecture diagrams clearly represent how different components, layers, or modules interact within your system. Whether it’s software, hardware, or cloud-based architecture, we illustrate it in a logical, structured way."
@@ -72,7 +135,7 @@
 			imageClass="order-1 lg:order-2"
 		/>
 	</div>
-	<div>
+	<div class="service-card">
 		<ServiceCard
 			title="Schematic Diagrams"
 			content1="We produce detailed schematic diagrams that accurately represent electrical and electronic systems. These include circuits, wiring layouts, and component symbols — professionally styled for clarity and submission."
@@ -82,7 +145,7 @@
 			imageClass="order-2 lg:order-1"
 		/>
 	</div>
-	<div class="my-8">
+	<div class="service-card my-8">
 		<ServiceCard
 			title="Mechanical / Engineering CAD Drawings"
 			content1="Our CAD drawing services support inventors, engineers, and companies by creating detailed 2D and 3D mechanical drawings. Whether you're preparing for a utility patent or need accurate models for prototyping, we’ve got you covered."

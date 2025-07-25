@@ -23,7 +23,7 @@
   
   <div id="accordion-collapse" data-accordion="collapse" class={`space-y-4 ${className}`}>
 	{#each items as item, index}
-	  <div class="accordion-item border-b border-base-600">
+	  <div class="accordion-item border-b border-base-300">
 		<h2 id="accordion-collapse-heading-{index}">
 		  <button
 			type="button"
@@ -33,7 +33,7 @@
 			aria-expanded={activeIndex === index}
 			aria-controls="accordion-collapse-body-{index}"
 		  >
-			<span>{item.title}</span>
+			<span class="text-base-700">{item.title}</span>
 			<Icon
 
 			  path={activeIndex === index ? mdiMinus : mdiPlus}
@@ -48,7 +48,7 @@
 		  style={`max-height: ${activeIndex === index ? '500px' : '0'}; opacity: ${activeIndex === index ? '1' : '0'};`}
 		  aria-labelledby="accordion-collapse-heading-{index}"
 		>
-		  <div class="pb-4 text-base-400">
+		  <div class="pb-4 text-base-600">
 			{@html item.content}
 		  </div>
 		</div>

@@ -45,6 +45,18 @@
 				toggleActions: 'play none none none'
 			}
 		});
+		
+		gsap.from('.hero-content', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			scrollTrigger: {
+				trigger: '.hero-content',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
 	});
 </script>
 
@@ -92,7 +104,7 @@
 	</div>
 	<div class="absolute bottom-2 w-full left-0 right-0 z-20  justify-center hidden sm:block">
 		<dl
-			class="w-full mx-auto mt-8 grid grid-cols-1 gap-x-6 gap-y-8 text-white px-4 sm:px-6 sm:mt-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-4 lg:px-8"
+			class="hero-content w-full mx-auto mt-8 grid grid-cols-1 gap-x-6 gap-y-8 text-white px-4 sm:px-6 sm:mt-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-4 lg:px-8"
 		>
 			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
 				<dt class="text-sm/6">Transform your concept into a clear, patent-ready draft.</dt>

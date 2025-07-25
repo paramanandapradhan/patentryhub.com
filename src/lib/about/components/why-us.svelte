@@ -1,5 +1,40 @@
 <script lang="ts">
 	import WhyUsCard from "$lib/common/components/why-us-card.svelte";
+	import { onMount } from 'svelte';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+	// Register ScrollTrigger plugin
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		// Animation for h1 (Why Us) when it enters viewport
+		gsap.from('.why-heading', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			scrollTrigger: {
+				trigger: '.why-heading',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
+
+		// Animation for WhyUsCard components
+		gsap.from('.why-cards', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			stagger: 0.2,
+			scrollTrigger: {
+				trigger: '.why-cards',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
+	});
 
 </script>
 
@@ -22,13 +57,13 @@
 			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
 		></div>
 	</div>
-	<div class=" text-center">
+	<div class="text-center why-heading">
 		<h4 class="text-lg font-medium uppercase tracking-widest text-primary-500">Why Choose Us</h4>
 		<h1 class="my-4 text-2xl font-black leading-tight text-base-800 md:my-6 md:text-4xl">
 			Here are 5 reasons to Choose Us
 		</h1>
 	</div>
-    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6 lg:mt-12">
+    <div class="why-cards grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6 lg:mt-12">
         <div>
             <WhyUsCard title="Experienced Team" description="With 10+ years in patent illustration, our team brings deep technical knowledge and proven expertise across industries."/>
         </div>

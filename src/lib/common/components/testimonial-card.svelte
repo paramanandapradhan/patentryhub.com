@@ -1,5 +1,63 @@
-<script lang="ts"> 
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import gsap from 'gsap';
+	import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+	// Register ScrollTrigger plugin
+	gsap.registerPlugin(ScrollTrigger);
+
+	onMount(() => {
+		gsap.from('.testimonial-heading', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			scrollTrigger: {
+				trigger: '.testimonial-heading',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
+		gsap.from('.testimonial-paragraph', {
+			opacity: 0,
+			y: 80,
+			duration: 1.5,
+			ease: 'power3.out',
+			scrollTrigger: {
+				trigger: '.testimonial-paragraph',
+				start: 'top 80%',
+				toggleActions: 'play none none none'
+			}
+		});
+		// Select all testimonial cards
+		const cards = document.querySelectorAll('.testimonial-card');
+
+		// Animate each card with a slight stagger
+		gsap.fromTo(
+			cards,
+			{
+				opacity: 0,
+				y: 100 // Start 100px below
+			},
+			{
+				opacity: 1,
+				y: 0,
+				duration: 0.8,
+				stagger: 0.2, // 0.2s delay between each card
+				ease: 'power3.out',
+				scrollTrigger: {
+					trigger: '.testimonials-container',
+					start: 'top 80%', // Start animation when container is 80% in viewport
+					toggleActions: 'play none none none'
+				}
+			}
+		);
+
+		// Cleanup ScrollTrigger on component destroy
+		return () => {
+			ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+		};
+	});
 </script>
 
 <div class="relative isolate bg-white pb-32 pt-24 sm:pt-32">
@@ -23,16 +81,18 @@
 	</div>
 	<div class="mx-auto max-w-7xl px-6 lg:px-8">
 		<div class="mx-auto max-w-2xl text-center">
-			<h2 class="text-base/7 font-semibold text-primary-600">Testimonials</h2>
-			<p class="mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+			<h2 class="testimonial-heading text-base/7 font-semibold text-primary-600">Testimonials</h2>
+			<p
+				class="testimonial-paragraph mt-2 text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl"
+			>
 				We have worked with thousands of amazing people
 			</p>
 		</div>
 		<div
-			class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4"
+			class="testimonials-container mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4"
 		>
 			<figure
-				class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1"
+				class="testimonial-card rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1"
 			>
 				<blockquote
 					class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8"
@@ -51,12 +111,13 @@
 						<div class="font-semibold text-gray-900">Brenna Goyette</div>
 						<div class="text-gray-600">@brennagoyette</div>
 					</div>
-					<!-- <img src="https://tailwindcss.com/plus-assets/img/logos/savvycal-logo-gray-900.svg" alt="" class="h-10 w-auto flex-none" /> -->
 				</figcaption>
 			</figure>
 			<div class="space-y-8 xl:contents xl:space-y-0">
 				<div class="space-y-8 xl:row-span-2">
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut
@@ -71,7 +132,9 @@
 							</div>
 						</figcaption>
 					</figure>
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores similique
@@ -86,7 +149,9 @@
 							</div>
 						</figcaption>
 					</figure>
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Consequatur ut atque. Itaque nostrum molestiae id veniam eos cumque. Ut quia eum
@@ -103,7 +168,9 @@
 					</figure>
 				</div>
 				<div class="space-y-8 xl:row-start-1">
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut
@@ -118,7 +185,9 @@
 							</div>
 						</figcaption>
 					</figure>
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Nam nesciunt dolorem dolor asperiores cum. Incidunt molestiae quis deleniti vitae
@@ -137,7 +206,9 @@
 			</div>
 			<div class="space-y-8 xl:contents xl:space-y-0">
 				<div class="space-y-8 xl:row-start-1">
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae.
@@ -152,7 +223,9 @@
 							</div>
 						</figcaption>
 					</figure>
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Aliquid dolore praesentium ratione. Cumque ea officia repellendus laboriosam. Vitae
@@ -169,7 +242,9 @@
 					</figure>
 				</div>
 				<div class="space-y-8 xl:row-span-2">
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt
@@ -184,7 +259,9 @@
 							</div>
 						</figcaption>
 					</figure>
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Architecto libero natus est. Est quam debitis officia enim atque et ut non. Sunt
@@ -199,7 +276,9 @@
 							</div>
 						</figcaption>
 					</figure>
-					<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+					<figure
+						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
+					>
 						<blockquote class="text-gray-900">
 							<p>
 								“Temporibus ea molestiae impedit adipisci perspiciatis illo aliquid. Quis ut ratione

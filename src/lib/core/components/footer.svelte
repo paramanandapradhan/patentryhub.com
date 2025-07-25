@@ -74,7 +74,7 @@
 				</li>
 
 				<li>
-					<a href="/product#faq" class="text-base-800 hover:text-primary-500 text-sm">FAQs</a>
+					<a href="/service#faq" class="text-base-800 hover:text-primary-500 text-sm">FAQs</a>
 				</li>
 			</ul>
 		</div>
