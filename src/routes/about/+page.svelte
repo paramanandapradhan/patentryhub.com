@@ -1,5 +1,6 @@
 <script lang="ts">
-	import HeroSection from '$lib/about/components/hero-section.svelte';
+	import AboutHeroSection from '$lib/about/components/about-hero-section.svelte';
+	import AboutUs from '$lib/about/components/about-us.svelte';
 	import OurMission from '$lib/about/components/our-mission.svelte';
 	import WhyUs from '$lib/about/components/why-us.svelte';
 	import AppNavbar from '$lib/core/components/app-navbar.svelte';
@@ -8,17 +9,20 @@
 </script>
 
 <div class="min-h-full">
-	<AppNavbar hasLogo hasTitle/>
+	<AppNavbar hasLogo hasTitle />
 	<div>
-		<HeroSection />
+		<AboutHeroSection />
 	</div>
-    <div>
-        <OurMission />
-    </div>
-    <div>
-        <WhyUs />
-    </div>
-	<div >
+	<div>
+		<AboutUs />
+	</div>
+	<div>
+		<OurMission />
+	</div>
+	<div>
+		<WhyUs />
+	</div>
+	<div>
 		<Footer />
 	</div>
 	<div>

@@ -5,7 +5,7 @@
 	
 </script>
 
-<div class="relative isolate bg-white w-full px-4 md:px-16 lg:px-32 py-4 md:py-6 lg:py-12">
+<div class="relative isolate bg-white mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
 	<div
 		aria-hidden="true"
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"

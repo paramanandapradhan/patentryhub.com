@@ -45,11 +45,11 @@
 				toggleActions: 'play none none none'
 			}
 		});
-		
+
 		gsap.from('.hero-content', {
 			opacity: 0,
-			y: 80,
-			duration: 1.5,
+			y: 50,
+			duration: 1.2,
 			ease: 'power3.out',
 			scrollTrigger: {
 				trigger: '.hero-content',
@@ -60,7 +60,7 @@
 	});
 </script>
 
-<div class="relative h-screen w-full overflow-hidden">
+<div class="relative h-[700px] w-full overflow-hidden">
 	<!-- Background Video -->
 	<video class="absolute left-0 top-0 h-full w-full object-cover" autoplay muted loop playsinline>
 		<source src="/video/home-video3.mp4" type="video/mp4" />
@@ -72,7 +72,7 @@
 
 	<!-- Content Container -->
 	<div
-		class="relative z-10 mx-auto flex h-full flex-col items-center justify-center px-4 sm:px-6 md:flex-row lg:justify-start lg:px-32 lg:items-start lg:mt-20 "
+		class="relative z-10 mx-auto flex h-full flex-col items-center justify-center px-4 sm:px-6 md:flex-row lg:mt-20 lg:items-start lg:justify-start lg:px-32"
 	>
 		<!-- Text Content with Glassmorphic Effect -->
 		<div
@@ -83,7 +83,13 @@
 			>
 				Connect-the-dots
 			</h1>
-			<p class="hero-paragraph mb-6 text-base text-base-400 sm:text-lg md:text-xl">
+			<p class="hero-paragraph mb-6 text-base italic text-base-300 sm:text-lg md:text-xl">
+				We deliver innovative and intellectual Patent drawings
+			</p>
+			<p class="hero-paragraph mb-2 text-lg italic text-base-400">
+				The team delivers an excellent drawings in a limited period of time
+			</p>
+			<p class="hero-paragraph mb-6 text-lg italic text-base-400">
 				Discover emerging science and strengthen your IP portfolio
 			</p>
 			<div class="button-container flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
@@ -102,25 +108,35 @@
 			</div>
 		</div>
 	</div>
-	<div class="absolute bottom-2 w-full left-0 right-0 z-20  justify-center hidden sm:block">
+	<div class="absolute bottom-14 left-0 right-0 z-20 hidden w-full justify-center sm:block">
 		<dl
-			class="hero-content w-full mx-auto mt-8 grid grid-cols-1 gap-x-6 gap-y-8 text-white px-4 sm:px-6 sm:mt-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-4 lg:px-8"
+			class="hero-content mx-auto mt-8 grid w-full grid-cols-1 gap-x-6 gap-y-8 px-4 text-white sm:mt-10 sm:grid-cols-2 sm:gap-y-12 sm:px-6 lg:grid-cols-4 lg:px-8"
 		>
 			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
 				<dt class="text-sm/6">Transform your concept into a clear, patent-ready draft.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">Connect the lines.</dd>
+				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
+					Connect the lines.
+				</dd>
 			</div>
 			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
 				<dt class="text-sm/6">Precision drawings that meet global patent office standards.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">Accuracy in every line.</dd>
+				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
+					Accuracy in every line.
+				</dd>
 			</div>
 			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
 				<dt class="text-sm/6">Exceptional drafting that reflects the value of your invention.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">Driven by quality.</dd>
+				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
+					Driven by quality.
+				</dd>
 			</div>
 			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-				<dt class="text-sm/6">Secure your innovation with professional patent support you can trust.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">Protect your ideas.</dd>
+				<dt class="text-sm/6">
+					Secure your innovation with professional patent support you can trust.
+				</dt>
+				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
+					Protect your ideas.
+				</dd>
 			</div>
 		</dl>
 	</div>

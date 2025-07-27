@@ -48,11 +48,11 @@
 <div class="">
 	<form class="space-y-5">
 		<div>
-			<EmailField placeholder="Email Address" />
+			<EmailField placeholder="Email Address" bind:value={email} className="!bg-white !text-base-800" />
 		</div>
 
 		<div>
-			<Button label="SUBSCRIBE" appearance="border-primary" className="w-full" />
+			<Button label="SUBSCRIBE" appearance="border-primary" className="w-full " />
 		</div>
 	</form>
 </div>

@@ -38,7 +38,7 @@
 
 </script>
 
-<div class="relative isolate bg-white mx-4 my-6 min-h-screen sm:mx-8 sm:my-8 md:mx-16 md:my-12 lg:mx-32">
+<div class="relative isolate bg-white mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
     <div
 		aria-hidden="true"
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
@@ -63,7 +63,7 @@
 			Here are 5 reasons to Choose Us
 		</h1>
 	</div>
-    <div class="why-cards grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 mt-6 lg:mt-12">
+    <div class="why-cards grid grid-cols-1 gap-4 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 mt-6 lg:mt-12">
         <div>
             <WhyUsCard title="Experienced Team" description="With 10+ years in patent illustration, our team brings deep technical knowledge and proven expertise across industries."/>
         </div>

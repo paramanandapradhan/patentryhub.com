@@ -4,13 +4,12 @@
 	import CopyRights from '$lib/core/components/copy-rights.svelte';
 	import Footer from '$lib/core/components/footer.svelte';
 	import HeroSection from '$lib/home/components/hero-section.svelte';
-	import HeroSectionAbout from '$lib/about/components/hero-section.svelte';
 	import NumberSection from '$lib/home/components/number-section.svelte';
 	import WhyUs from '$lib/about/components/why-us.svelte';
-	import HomeServiceSection from '$lib/service/components/service.svelte';
 	import LogoSection from '$lib/home/components/logo-section.svelte';
 	import { openContactDialog } from '$lib/home/service';
 	import { onMount } from 'svelte';
+	import AboutUs from '$lib/about/components/about-us.svelte';
 
 	async function handleOpenContactForm() {
 		await openContactDialog();
@@ -34,7 +33,7 @@
 		<HeroSection />
 	</div>
 	<div>
-		<HeroSectionAbout />
+		<AboutUs />
 	</div>
 	<div>
 		<WhyUs />

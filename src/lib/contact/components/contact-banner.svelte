@@ -2,7 +2,7 @@
 	import ContactCard from './contact-card.svelte';
 </script>
 
-<div class="relative min-h-screen">
+<div class="relative h-[700px]">
 	<!-- Background Image -->
 	<div
 		class="absolute inset-0 -z-10 h-full w-full bg-cover bg-center"

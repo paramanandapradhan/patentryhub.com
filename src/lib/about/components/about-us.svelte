@@ -66,7 +66,7 @@
 	});
 </script>
 
-<div class="relative isolate bg-white mx-4 my-6 min-h-screen sm:mx-8 sm:my-8 md:mx-16 md:my-12 lg:mx-32">
+<div class="relative isolate bg-white mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
 	<div
 		aria-hidden="true"
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
@@ -93,7 +93,7 @@
 	<div
 		class=" max-w-full  px-4 py-4  sm:px-6 sm:py-6 md:px-10 md:py-10 lg:px-16 lg:py-16"
 	>
-		<div class="grid grid-cols-1 items-center gap-4 sm:gap-6 md:grid-cols-2 md:gap-8">
+		<div class="grid grid-cols-1 items-center gap-4 sm:gap-6 md:grid-cols-2 md:gap-20">
 			<div class="order-1 lg:order-2">
 				<h1 class="heading mb-4 text-2xl font-extrabold text-base-800 md:text-3xl">
 					Our Expertise & Experience
