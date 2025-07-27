@@ -15,9 +15,9 @@
 	<div>
 		<ContactForm />
 	</div>
-	<div>
+	<!-- <div>
 		<ConstactMap />
-	</div>
+	</div> -->
 	<div>
 		<Footer />
 	</div>
