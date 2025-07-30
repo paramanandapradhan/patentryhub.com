@@ -67,20 +67,27 @@
 	<!-- Heading Section -->
 	<div class="text-center">
 		<h4
-			class="service-heading-h4 my-4 text-lg font-medium uppercase tracking-widest text-primary-500 md:my-6 "
+			class="service-heading-h4 my-4 text-lg font-medium uppercase tracking-widest text-primary-500 md:my-6"
 		>
 			Our Services
 		</h4>
-		<h1 class="service-heading-h1 mb-6 lg:mb-20 text-2xl font-black leading-tight text-base-800 md:text-4xl">
+		<h1
+			class="service-heading-h1 mb-6 text-2xl font-black leading-tight text-base-800 md:text-4xl lg:mb-20"
+		>
 			Discover Expert Solutions for Your IP Needs
 		</h1>
 	</div>
 	<div class="service-card">
 		<ServiceCard
 			title="Utility Patent Drawings"
-			content1="Our utility patent drawings clearly illustrate the technical structure and functionality of your invention. We follow all formal patent office requirements, ensuring your figures are accurate, consistent, and professionally laid out."
-			content2="These drawings are critical in helping examiners understand your invention. Whether you’re filing a national or international patent, we ensure the visual representation supports your claims and reduces the chance of office actions or rejections."
-			image="/imgs/about-hero-img1.webp"
+			content1="Our utility patent drawings clearly demonstrate the technical structure and functionality of your invention. We strictly follow formal patent office guidelines to ensure every figure is accurate, consistent, and professionally presented.These drawings enhance examiner understanding and help streamline your application process. Whether filing nationally or internationally, we ensure your invention is visually represented in a way that supports your claims and minimizes the likelihood of rejections or delays."
+			image="/imgs/image5.webp"
+			additionalImages={[
+				'/imgs/image5.webp',
+				'/imgs/image1.webp',
+				'/imgs/image2.webp',
+				'/imgs/image3.webp'
+			]}
 			contentClass="order-1 lg:order-2"
 			imageClass="order-2 lg:order-1"
 		/>
@@ -88,19 +95,29 @@
 	<div class="service-card my-8">
 		<ServiceCard
 			title="Design Patent Drawings"
-			content1="Design patents focus on how a product looks — and we make sure your design is captured in perfect detail. Our design patent drawings include all required views (front, back, side, top, bottom, perspective) with precision and clarity."
-			content2="We understand the strict formatting rules for design filings and prepare drawings that highlight the unique features of your product, making your submission smooth and compliant."
-			image="/imgs/about-hero-img1.webp"
-			contentClass="order-2 lg:order-1"
-			imageClass="order-1 lg:order-2"
+			content1="Design patents protect how your product looks — and we capture that appearance with precision. Our drawings include all required views (front, back, sides, top, bottom, perspective) and meet every formatting rule for a compliant and professional submission. We emphasize the unique features of your design to give your application a competitive edge and a smoother path to approval."
+			image="/imgs/image4.webp"
+			additionalImages={[
+				'/imgs/image4.webp',
+				'/imgs/image1.webp',
+				'/imgs/image2.webp',
+				'/imgs/image3.webp'
+			]}
+			contentClass="order-1"
+			imageClass="order-2"
 		/>
 	</div>
 	<div class="service-card">
 		<ServiceCard
 			title="Trademark & Branding Illustrations"
-			content1="Trademark drawings must follow specific standards to be accepted during registration. We prepare clean, precise trademark illustrations whether you’re filing a wordmark, logo, symbol, or combination mark."
-			content2="From black-and-white line versions to grayscale or stylized drawings, our illustrations are tailored to meet global trademark office formats, helping protect your brand identity without delays."
-			image="/imgs/about-hero-img1.webp"
+			content1="A trademark drawing must meet exact standards to be accepted — and we deliver illustrations that are sharp, accurate, and fully compliant. Whether you’re filing logo, or symbol, we prepare artwork suited for every major trademark office. From simple line versions to grayscale or stylized graphics, we help you protect your brand with visuals that meet formal requirements and communicate your identity clearly."
+			image="/imgs/image6.webp"
+			additionalImages={[
+				'/imgs/image6.webp',
+				'/imgs/image1.webp',
+				'/imgs/image2.webp',
+				'/imgs/image3.webp'
+			]}
 			contentClass="order-1 lg:order-2"
 			imageClass="order-2 lg:order-1"
 		/>
@@ -108,39 +125,29 @@
 	<div class="service-card my-8">
 		<ServiceCard
 			title="Logo Design"
-			content1="A strong logo is the foundation of your brand. We offer custom logo design services that balance creativity and professionalism — with the added benefit of making them IP-compliant and ready for trademark filing."
-			content2="Whether you need a new logo or want to redesign an existing one, we work closely with you to deliver multiple concepts, refined drafts, and final versions in all standard formats."
-			image="/imgs/about-hero-img1.webp"
-			contentClass="order-2 lg:order-1"
-			imageClass="order-1 lg:order-2"
+			content1="A great logo is more than just a symbol — it's the face of your brand. We craft professional, creative logos that are not only visually strong but also designed for smooth trademark registration. Whether you’re starting fresh or rebranding, we provide custom concepts, thoughtful refinements, and final files ready for every platform — all IP-friendly and ready for registration."
+			image="/imgs/image3.webp"
+			additionalImages={[
+				'/imgs/image3.webp',
+				'/imgs/image1.webp',
+				'/imgs/image2.webp',
+				'/imgs/image3.webp'
+			]}
+			contentClass="order-1"
+			imageClass="order-2"
 		/>
 	</div>
 	<div class="service-card">
 		<ServiceCard
 			title="Flowcharts"
-			content1="Flowcharts are essential for explaining software logic, business processes, or patent method claims. We create professional, logically structured charts using industry-standard symbols and clean design."
-			content2="These charts not only improve your patent application but also enhance your documentation and internal presentations. Just provide your steps or outline — we’ll turn it into a clear, publish-ready flowchart."
-			image="/imgs/about-hero-img1.webp"
-			contentClass="order-1 lg:order-2"
-			imageClass="order-2 lg:order-1"
-		/>
-	</div>
-	<div class="service-card my-8">
-		<ServiceCard
-			title="System Architecture Diagrams"
-			content1="Our system architecture diagrams clearly represent how different components, layers, or modules interact within your system. Whether it’s software, hardware, or cloud-based architecture, we illustrate it in a logical, structured way."
-			content2="Perfect for patent filings, whitepapers, and presentations, these diagrams are custom-built to match your technical vision and application needs."
-			image="/imgs/about-hero-img1.webp"
-			contentClass="order-2 lg:order-1"
-			imageClass="order-1 lg:order-2"
-		/>
-	</div>
-	<div class="service-card">
-		<ServiceCard
-			title="Schematic Diagrams"
-			content1="We produce detailed schematic diagrams that accurately represent electrical and electronic systems. These include circuits, wiring layouts, and component symbols — professionally styled for clarity and submission."
-			content2="Our team ensures that your schematics are clean, technically accurate, and aligned with global documentation standards — supporting your patent or product development goals."
-			image="/imgs/about-hero-img1.webp"
+			content1="Flowcharts are powerful tools for explaining processes — from software logic to business workflows or patent method claims. We turn your rough steps or outlines into clean, easy-to-understand diagrams using standard symbols and layout practices. Our flowcharts help improve not only your patent application but also internal communication, documentation, and presentations."
+			image="/imgs/image2.webp"
+			additionalImages={[
+				'/imgs/image2.webp',
+				'/imgs/image1.webp',
+				'/imgs/image2.webp',
+				'/imgs/image3.webp'
+			]}
 			contentClass="order-1 lg:order-2"
 			imageClass="order-2 lg:order-1"
 		/>
@@ -148,11 +155,16 @@
 	<div class="service-card my-8">
 		<ServiceCard
 			title="Mechanical / Engineering CAD Drawings"
-			content1="Our CAD drawing services support inventors, engineers, and companies by creating detailed 2D and 3D mechanical drawings. Whether you're preparing for a utility patent or need accurate models for prototyping, we’ve got you covered."
-			content2="From complex assemblies to individual components, we work from your sketches, images, or concepts and provide professional outputs in multiple formats — all dimensioned and ready for use."
-			image="/imgs/about-hero-img1.webp"
-			contentClass="order-2 lg:order-1"
-			imageClass="order-1 lg:order-2"
+			content1="Our CAD drawing services are tailored for inventors, engineers, and product developers. We create detailed 2D and 3D mechanical drawings that meet patent, prototyping, and production needs. From full assemblies to individual parts, we work from your sketches or ideas to deliver polished, dimensioned files in multiple formats — ready for manufacturing, patent filing, or presentation."
+			image="/imgs/image1.webp"
+			additionalImages={[
+				'/imgs/image1.webp',
+				'/imgs/image4.webp',
+				'/imgs/image6.webp',
+				'/imgs/image5.webp'
+			]}
+			contentClass="order-1"
+			imageClass="order-2"
 		/>
 	</div>
 </div>

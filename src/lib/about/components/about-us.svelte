@@ -85,11 +85,7 @@
 			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
 		></div>
 	</div>
-	<h1
-		class="heading mb-6 text-2xl font-extrabold text-base-800 sm:mb-8 sm:text-3xl md:mb-10 md:text-4xl"
-	>
-		Who We Are
-	</h1>
+	<h4 class="text-center text-lg font-medium uppercase tracking-widest text-primary-500">About Us</h4>
 	<div
 		class=" max-w-full  px-4 py-4  sm:px-6 sm:py-6 md:px-10 md:py-10 lg:px-16 lg:py-16"
 	>
