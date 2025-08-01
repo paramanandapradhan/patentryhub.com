@@ -56,7 +56,7 @@
   }
 </script>
 
-<div class="relative isolate bg-white grid grid-cols-1 items-center gap-6 md:grid-cols-2 md:gap-12">
+<div class="relative isolate bg-white grid grid-cols-1  gap-6 md:grid-cols-2 md:gap-12">
   <div
     aria-hidden="true"
     class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
@@ -81,7 +81,7 @@
     </h1>
     <div class="mb-4 mt-2 w-2/3 rounded-full border-t-4 border-primary-600 lg:mb-8"></div>
     <p
-      class="first-paragraph-hero mb-4 font-semibold text-base-800 sm:mb-6 text-lg md:text-3xl"
+      class="first-paragraph-hero mb-4 font-semibold text-base-800 sm:mb-6 text-lg md:text-lg"
     >
       {content1}
     </p>

@@ -50,15 +50,15 @@
 							<h1
 								class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
 							>
-								We’re changing the way people connect
+								Crafting Precision Visuals for Your IP Success
 							</h1>
 							<p
 								class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none"
 							>
-								Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit
-								aute velit. Et labore commodo nulla aliqua proident mollit ullamco exercitation
-								tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum. Eu
-								voluptate tempor esse minim amet fugiat veniam occaecat aliqua.
+								We specialize in creating precise, compliant patent drawings, trademarks, logos,
+								flowcharts, and CAD designs. Our expert team ensures your intellectual property is
+								visually compelling, meeting strict guidelines to support seamless patent filings
+								and brand protection.
 							</p>
 						</div>
 						<div
@@ -69,7 +69,7 @@
 							>
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+										src="/imgs/image5.webp"
 										alt=""
 										class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 									/>
@@ -81,7 +81,7 @@
 							<div class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+										src="/imgs/image4.webp"
 										alt=""
 										class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 									/>
@@ -91,7 +91,7 @@
 								</div>
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+										src="/imgs/image3.webp"
 										alt=""
 										class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 									/>
@@ -103,7 +103,7 @@
 							<div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+										src="/imgs/image2.webp"
 										alt=""
 										class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 									/>
@@ -113,7 +113,7 @@
 								</div>
 								<div class="relative">
 									<img
-										src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+										src="/imgs/image6.webp"
 										alt=""
 										class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
 									/>

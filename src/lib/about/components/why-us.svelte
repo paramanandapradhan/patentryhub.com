@@ -59,9 +59,7 @@
 	</div>
 	<div class="text-center why-heading">
 		<h4 class="text-lg font-medium uppercase tracking-widest text-primary-500">Why Choose Us</h4>
-		<h1 class="my-4 text-2xl font-black leading-tight text-base-800 md:my-6 md:text-4xl">
-			Here are 5 reasons to Choose Us
-		</h1>
+		
 	</div>
     <div class="why-cards grid grid-cols-1 gap-4 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 mt-6 lg:mt-12">
         <div>

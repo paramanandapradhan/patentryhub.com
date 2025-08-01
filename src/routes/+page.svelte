@@ -10,6 +10,7 @@
 	import { openContactDialog } from '$lib/home/service';
 	import { onMount } from 'svelte';
 	import AboutUs from '$lib/about/components/about-us.svelte';
+	import Pricing from '$lib/service/components/pricing.svelte';
 
 	async function handleOpenContactForm() {
 		await openContactDialog();
@@ -36,12 +37,14 @@
 		<AboutUs />
 	</div>
 	<div>
+		<Pricing />
+	</div>
+	<div>
 		<WhyUs />
 	</div>
-
-	<div>
+	<!-- <div>
 		<NumberSection />
-	</div>
+	</div> -->
 	<div>
 		<LogoSection />
 	</div>
