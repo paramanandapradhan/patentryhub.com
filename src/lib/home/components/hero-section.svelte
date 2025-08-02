@@ -116,9 +116,9 @@
 				{#each features as feature}
 					<div class="feature-item hidden flex-col gap-y-3 border-l border-white/10 pl-6">
 						<dt class="text-sm/6 text-base-300">{feature.description}</dt>
-						<dd class="order-first text-xl font-semibold tracking-tight sm:text-2xl">
+						<h1 class="order-first text-xl font-bold tracking-tight lg:text-4xl">
 							{feature.heading}
-						</dd>
+						</h1>
 					</div>
 				{/each}
 			</div>

@@ -22,7 +22,8 @@
 	let pageMenus = [
 		{ id: 'home', title: 'Home', url: '/', isExternal: false },
 		{ id: 'about', title: 'About', url: '/about', isExternal: false },
-		{ id: 'product', title: 'Services', url: '/service', isExternal: false },
+		{ id: 'service', title: 'Services', url: '/service', isExternal: false },
+		{ id: 'sample', title: 'Samples', url: '/sample', isExternal: false },
 		{ id: 'contact', title: 'Contact', url: '/contact', isExternal: false }
 	];
 
