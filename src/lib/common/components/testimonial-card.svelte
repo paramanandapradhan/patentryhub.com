@@ -97,10 +97,10 @@
 				<blockquote
 					class="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8"
 				>
+					<p class="text-center">"Incredible clarity and precision."</p>
 					<p>
-						“Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor
-						libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis
-						blandit vel et proin. Non hendrerit in vel ac diam.”
+						"My ideas were turned into clear, compliant drawings that sailed through the patent
+						office review. Great communication and highly professional service."
 					</p>
 				</blockquote>
 				<figcaption
@@ -119,9 +119,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"They understood my invention perfectly!"</p>
 							<p>
-								“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut
-								enim doloremque et ipsam.”
+								"The team delivered accurate patent drawings faster than I expected. Their attention
+								to detail and understanding of technical requirements was impressive."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -136,9 +137,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Highly recommend their services!"</p>
 							<p>
-								“Quia dolorem qui et. Atque quo aliquid sit eos officia. Dolores similique
-								laboriosam quaerat cupiditate.”
+								"They delivered exactly what I needed — high-quality drawings, on time, and with
+								excellent support. I’ll definitely come back for future projects."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -153,9 +155,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Professional from start to finish."</p>
 							<p>
-								“Consequatur ut atque. Itaque nostrum molestiae id veniam eos cumque. Ut quia eum
-								fugit laborum autem inventore ut voluptate.”
+								"They handled my utility patent drawings with great precision. Excellent team and
+								fast turnaround!"
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -172,9 +175,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Smooth, efficient, and reliable."</p>
 							<p>
-								“Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut
-								officia rem nulla blanditiis.”
+								"From concept to final output, the entire process was streamlined. I felt supported
+								at every step."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -189,9 +193,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Expert-level technical drawing!"</p>
 							<p>
-								“Nam nesciunt dolorem dolor asperiores cum. Incidunt molestiae quis deleniti vitae
-								ut in earum delectus iusto.”
+								"They translated my mechanical idea into a drawing that was not only accurate but
+								perfectly aligned with patent office requirements."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -210,9 +215,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Outstanding service and support."</p>
 							<p>
-								“Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae.
-								Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.”
+								"The level of care and professionalism was top-notch. They took the time to
+								understand the invention and delivered perfect results."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -227,9 +233,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Exactly what I was hoping for!"</p>
 							<p>
-								“Aliquid dolore praesentium ratione. Cumque ea officia repellendus laboriosam. Vitae
-								quod id explicabo non sunt.”
+								"Drawings were delivered quickly and matched the guidelines exactly. The team was
+								communicative, skilled, and helpful."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -246,9 +253,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Fast, responsive, and professional."</p>
 							<p>
-								“Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt
-								excepturi rerum voluptatem minus harum.”
+								"Their team turned my rough sketches into clean, compliant illustrations with zero
+								hassle."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -263,9 +271,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"They made the complex feel simple."</p>
 							<p>
-								“Architecto libero natus est. Est quam debitis officia enim atque et ut non. Sunt
-								reiciendis quasi eaque. Itaque error ut et.”
+								"I’m not technical, but they explained everything clearly and delivered patent
+								drawings I’m confident in."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
@@ -280,9 +289,10 @@
 						class="testimonial-card rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5"
 					>
 						<blockquote class="text-gray-900">
+							<p class="text-center">"Perfect experience!"</p>
 							<p>
-								“Temporibus ea molestiae impedit adipisci perspiciatis illo aliquid. Quis ut ratione
-								et voluptatem et. Nostrum explicabo iste unde beatae.”
+								"They handled everything with care and precision. The drawings were accepted without
+								a single revision."
 							</p>
 						</blockquote>
 						<figcaption class="mt-6 flex items-center gap-x-4">
