@@ -88,7 +88,7 @@
 			<p class="text-base-700">You can reach out to us at:</p>
 			<div class="space-y-3">
 				<a
-					href="tel:+917995662228"
+					href="tel:+917411909057"
 					class="flex items-center justify-center gap-2 text-sm text-base-800 transition hover:text-primary-500 lg:items-start lg:justify-start"
 				>
 					<Icon path={mdiPhone} className="h-4 w-4" />
@@ -96,7 +96,7 @@
 					+91 7411909057
 				</a>
 				<a
-					href="mailto:support@amazeip.com"
+					href="mailto:support@patentryhub.com"
 					class="flex items-center justify-center gap-2 text-sm text-base-800 transition hover:text-primary-500 lg:items-start lg:justify-start"
 				>
 					<Icon path={mdiEmailOutline} className="h-4 w-4" />

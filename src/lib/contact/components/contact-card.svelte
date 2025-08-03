@@ -15,8 +15,8 @@
 			</div>
 			<div class="flex-1 text-left">
 				<p class="text-lg font-medium text-base-900 md:text-xl">Email</p>
-				<a href="mailto:support@amazeip.com" class="text-sm text-base-700 md:text-lg">
-					support@amazeip.com
+				<a href="mailto:support@patentryhub.com" class="text-sm text-base-700 md:text-lg">
+					support@patentryhub.com
 				</a>
 				<!-- <p class="text-sm text-base-400 md:text-lg">support@hellocall.ai</p> -->
 			</div>
@@ -32,7 +32,7 @@
 			</div>
 			<div class="flex-1 text-left">
 				<p class="text-lg font-medium text-base-900 md:text-xl">Phone</p>
-				<a href="tel:+917995662228" class="text-sm text-base-800 md:text-lg">+91 7995662228</a>
+				<a href="tel:+917411909057" class="text-sm text-base-800 md:text-lg">+91 7411909057</a>
 			</div>
 		</div>
 	</GlowCard>
