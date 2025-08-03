@@ -93,7 +93,7 @@
 				>
 					<Icon path={mdiPhone} className="h-4 w-4" />
 
-					+91 7995662228
+					+91 7411909057
 				</a>
 				<a
 					href="mailto:support@amazeip.com"
@@ -101,7 +101,7 @@
 				>
 					<Icon path={mdiEmailOutline} className="h-4 w-4" />
 
-					support@amazeip.com
+					support@patentryhub.com
 				</a>
 				<a
 					href="/contact"
