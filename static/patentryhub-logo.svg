@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="512mm"
+   height="512mm"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg3373"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="patentryhub-logo.svg"
+   inkscape:export-filename="patentryhub.logo.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3375"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.074331525"
+     inkscape:cx="1681.6553"
+     inkscape:cy="1769.1013"
+     inkscape:window-width="1728"
+     inkscape:window-height="1023"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="634.27117,416.35592"
+       orientation="0,-1"
+       id="guide4252"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="658.18219,95.444913"
+       orientation="0,-1"
+       id="guide4254"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs3370" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:418.158px;font-family:'Fugaz One';-inkscape-font-specification:'Fugaz One, Normal';fill:#00458f;fill-opacity:1;stroke:none;stroke-width:4.37866"
+       x="526.07996"
+       y="405.19922"
+       id="text3716"
+       inkscape:export-filename="patentryhub-log-full.png"
+       inkscape:export-xdpi="25.4"
+       inkscape:export-ydpi="25.4"><tspan
+         sodipodi:role="line"
+         id="tspan3714"
+         style="fill:#00458f;fill-opacity:1;stroke:none;stroke-width:4.37866"
+         x="526.07996"
+         y="405.19922">PATENTRYHUB</tspan></text>
+    <g
+       id="g3785"
+       transform="translate(12.817303,-9.531395)">
+      <rect
+         style="fill:#00458f;fill-opacity:1;stroke:none;stroke-width:0.310188"
+         id="rect3718"
+         width="294.43747"
+         height="179.91624"
+         x="96.925346"
+         y="106.3639"
+         ry="89.958122"
+         rx="89.958122" />
+      <rect
+         style="fill:#26adff;fill-opacity:1;stroke:none;stroke-width:0.32252"
+         id="rect3726"
+         width="318.33615"
+         height="179.90392"
+         x="106.37004"
+         y="-274.94772"
+         ry="89.951958"
+         transform="rotate(90)"
+         rx="89.951958" />
+      <rect
+         style="fill:#1c88fb;fill-opacity:1;stroke:none;stroke-width:0.241984"
+         id="rect3728"
+         width="179.17538"
+         height="179.9308"
+         x="106.3566"
+         y="-274.93338"
+         ry="0"
+         transform="rotate(90)"
+         rx="0" />
+    </g>
+  </g>
+</svg>
