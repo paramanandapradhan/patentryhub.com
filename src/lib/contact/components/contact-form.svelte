@@ -55,7 +55,7 @@
 	}
 </script>
 
-<div class="relative isolate bg-white mx-auto my-16 p-0.5 px-4 md:my-32 md:px-16 lg:px-32">
+<div class="relative isolate mx-auto my-16 bg-white p-0.5 px-4 md:my-32 md:px-16 lg:px-32">
 	<div
 		aria-hidden="true"
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
@@ -129,12 +129,12 @@
 						Have questions? We're here to help. Reach out to us for any inquiries or feedback.
 					</p>
 					<p class="mb-4 text-base-700">
-						Email: <a href="mailto: support@amazeip.com" class="text-primary-500">
-							support@amazeip.com</a
+						Email: <a href="mailto: support@patentryhub.com" class="text-primary-500">
+							support@patentryhub.com</a
 						>
 					</p>
 					<p class="mb-4 text-base-400">
-						Phone: <a href="tel:+91 7995662228" class="text-primary-500">+91 7995662228</a>
+						Phone: <a href="tel:+91 7411909057" class="text-primary-500">+91 7411909057</a>
 					</p>
 				</div>
 			</div>

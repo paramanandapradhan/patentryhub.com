@@ -95,7 +95,7 @@
 				<Button
 					appearance="primary"
 					iconPath={mdiPhone}
-					label="+917995662228"
+					label="+917411909057"
 					className="rounded-full px-8 font-bold"
 				/>
 			</div>
@@ -140,7 +140,7 @@
 					appearance="primary"
 					iconPath={mdiPhone}
 					iconClassName="!h-6 !w-6"
-					label="+917995662228"
+					label="+91 7411909057"
 					className="rounded-full px-8 font-bold"
 				/>
 			</div>

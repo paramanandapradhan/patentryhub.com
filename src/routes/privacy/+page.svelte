@@ -14,11 +14,11 @@
 		hasLogo
 		logoImgSrc="/icons/web/icon-192.png"
 		logoImgClassName="!h-8 !w-auto !object-contain !filter"
-		className = ' bg-gradient-to-r from-base-100 to-base-50 !h-20 border-b border-base-400'
+		className=" bg-gradient-to-r from-base-100 to-base-50 !h-20 border-b border-base-400"
 		hasTitle
 		hasSubtitle
 		title="PatentryHub"
-		titleClassName = '!text-primary-600 !font-black'
+		titleClassName="!text-primary-600 !font-black"
 		subtitle="Privacy Policy"
 		hasBack
 		onBack={goBack}
@@ -59,8 +59,8 @@
 						parts of our Service.
 					</li>
 					<li>
-						<strong>Company</strong> refers to PatentryHub, Cuttack, Odisha, referred to as "We", "Us", or
-						"Our".
+						<strong>Company</strong> refers to PatentryHub, Cuttack, Odisha, referred to as "We", "Us",
+						or "Our".
 					</li>
 					<li>
 						<strong>Cookies</strong> are small files placed on Your device that track your browsing history
@@ -181,7 +181,7 @@
 				</p>
 
 				<ul class="list-inside list-disc space-y-2 text-base-700">
-					<li>By email: support@amazeip.com</li>
+					<li>By email: support@patentryhub.com</li>
 				</ul>
 			</div>
 		</div>
