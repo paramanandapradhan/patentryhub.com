@@ -95,11 +95,11 @@
       onmouseenter={handleMouseEnter}
       onmouseleave={handleMouseLeave}
     >
-      <div class="absolute inset-0 z-0 rounded-lg bg-[#004F9F]"></div>
+      <div class="absolute inset-0 z-0 rounded-lg bg-[#004F9F] w-[500px]"></div>
       <img
         src={currentImage}
         alt="who we are"
-        class="relative z-10 mb-2 ml-2 h-auto w-full rounded-lg object-cover transition-transform duration-100"
+        class="relative z-10 mb-2 ml-2 h-[400px] w-[500px] rounded-lg object-cover transition-transform duration-100"
         style={isHovering
           ? `transform: scale(2); transform-origin: ${zoomX}% ${zoomY}%;`
           : 'transform: scale(1); transform-origin: center;'}

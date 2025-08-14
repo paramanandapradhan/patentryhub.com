@@ -1,5 +1,5 @@
 <script lang="ts">
-	import WhyUsCard from "$lib/common/components/why-us-card.svelte";
+	import WhyUsCard from '$lib/common/components/why-us-card.svelte';
 	import { onMount } from 'svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -35,11 +35,12 @@
 			}
 		});
 	});
-
 </script>
 
-<div class="relative isolate bg-white mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
-    <div
+<div
+	class="relative isolate mx-auto h-full w-full max-w-7xl items-center bg-white px-6 pb-32 pt-24 sm:pt-32 lg:px-8"
+>
+	<div
 		aria-hidden="true"
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
 	>
@@ -57,30 +58,40 @@
 			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
 		></div>
 	</div>
-	<div class="text-center why-heading">
+	<div class="why-heading text-center">
 		<h4 class="text-lg font-medium uppercase tracking-widest text-primary-500">Why Choose Us</h4>
-		
 	</div>
-    <div class="why-cards grid grid-cols-1 gap-4 lg:gap-10 md:grid-cols-2 lg:grid-cols-3 mt-6 lg:mt-12">
-        <div>
-            <WhyUsCard title="Experienced Team" description="With 10+ years in patent illustration, our team brings deep technical knowledge and proven expertise across industries."/>
-        </div>
-        <div>
-            <WhyUsCard title="Fast & Flexible Delivery" description="Standard turnaround is 3–5 days — and we’re ready for urgent requests too, with no extra charge for RUSH projects."/>
-        </div>
-         <div>
-            <WhyUsCard title="Quality First Approach" description="Every drawing goes through a multi-step quality review to ensure clarity, accuracy, and compliance with patent office standards."/>
-        </div>
-        <div>
-            <WhyUsCard title="Fair & Transparent Pricing" description="Our pricing is reasonable and straightforward — no hidden fees, just quality work at the right value."/>
-        </div>
-        <div>
-            <WhyUsCard title="Clear, Personal Communication" description="You’ll always talk to real people — no bots, no delays. Our team is responsive, helpful, and easy to reach when you need us."/>
-        </div>
-       
-    </div>
-    <div class=" text-center my-12">
-		<h4 class="text-lg font-medium tracking-widest text-base-700">Give us a try <span class="text-primary-500">Let's get started</span></h4>
-		
+	<div
+		class="why-cards mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 lg:mt-12 lg:grid-cols-3 lg:gap-10"
+	>
+		<div>
+			<WhyUsCard
+				title="Experienced Team"
+				description="With 10+ years in patent illustration, our team brings deep technical knowledge and proven expertise across industries."
+			/>
+		</div>
+		<div>
+			<WhyUsCard
+				title="Fast & Flexible Delivery"
+				description="Standard turnaround is 3–5 days — and we’re ready for urgent requests too, with no extra charge for RUSH projects."
+			/>
+		</div>
+		<div>
+			<WhyUsCard
+				title="Fair & Transparent Pricing"
+				description="Our pricing is fair and transparent — there are no concealed charges, only high-quality work at an appropriate value."
+			/>
+		</div>
+		<div>
+			<WhyUsCard
+				title="Effective Communication"
+				description="With no delays you can consistently communicate with the team Our team is attentive, supportive, and readily accessible whenever you require assistance."
+			/>
+		</div>
+	</div>
+	<div class=" my-12 text-center">
+		<h4 class="text-lg font-medium tracking-widest text-base-700">
+			Give us a try <span class="text-primary-500">Let's get started</span>
+		</h4>
 	</div>
 </div>

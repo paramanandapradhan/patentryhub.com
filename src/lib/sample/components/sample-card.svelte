@@ -1,5 +1,4 @@
 <script lang="ts">
-	// Sample images array for cleaner code
 	const images = [
 		'/imgs/img1.png',
 		'/imgs/img2.png',
@@ -40,27 +39,39 @@
 	</div>
 
 	<!-- Heading Section -->
-	<div class="text-center mb-12">
+	<div class="mb-12 text-center">
 		<h1 class="sample-heading text-3xl font-bold text-base-800 md:text-4xl lg:text-5xl">
 			Our Work Showcase
 		</h1>
-		<p class="sample-subheading my-6 text-lg text-base-600 max-w-2xl mx-auto">
-			Explore our collection of expertly crafted patent drawings, trademarks, and CAD designs, showcasing precision and compliance.
+		<p class="sample-subheading mx-auto my-6 max-w-2xl text-lg text-base-600">
+			Explore our collection of expertly crafted patent drawings, trademarks, and CAD designs,
+			showcasing precision and compliance.
 		</p>
 	</div>
 
 	<!-- Image Grid -->
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto max-w-7xl px-6 lg:px-8">
+	<div
+		class="mx-auto grid max-w-7xl grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:px-8"
+	>
 		{#each images as image, index}
-			<div class="sample-card relative  border overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slide-up p-2" style="--delay: {index * 0.1}s">
+			<div
+				class="sample-card animate-slide-up relative overflow-hidden border p-2 shadow-lg transition-shadow duration-300 hover:shadow-xl"
+				style="--delay: {index * 0.1}s"
+			>
 				<!-- Animated borders for top and left -->
-				<div class="absolute top-0 left-0 w-full h-0 bg-primary-600 z-10 border-animation-top"></div>
-				<div class="absolute top-0 left-0 w-0 h-full bg-primary-600 z-10 border-animation-left"></div>
-				<img
-					src={image}
-					alt={`Sample work ${index + 1}`}
-					class="h-full w-full object-cover transform hover:scale-105 transition-transform duration-300"
-				/>
+				<div
+					class="border-animation-top absolute left-0 top-0 z-10 h-0 w-full bg-primary-600"
+				></div>
+				<div
+					class="border-animation-left absolute left-0 top-0 z-10 h-full w-0 bg-primary-600"
+				></div>
+				<div class="image-container">
+					<img
+						src={image}
+						alt={`Sample work ${index + 1}`}
+						class="h-full w-full transform object-cover transition-transform duration-300 hover:scale-105"
+					/>
+				</div>
 			</div>
 		{/each}
 	</div>
@@ -88,13 +99,13 @@
 
 	/* Border animations for hover */
 	.border-animation-top {
-		height: 4px; /* Fixed height for top border */
+		height: 4px;
 		width: 0;
 		transition: width 0.3s ease-in-out;
 	}
 
 	.border-animation-left {
-		width: 4px; /* Fixed width for left border */
+		width: 4px;
 		height: 0;
 		transition: height 0.3s ease-in-out;
 	}
@@ -105,5 +116,18 @@
 
 	.sample-card:hover .border-animation-left {
 		height: 100%;
+	}
+
+	.image-container {
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
 	}
 </style>

@@ -66,7 +66,9 @@
 	});
 </script>
 
-<div class="relative isolate bg-white mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
+<div
+	class="relative isolate mx-auto h-full w-full max-w-7xl items-center bg-white px-6 pb-32 pt-24 sm:pt-32 lg:px-8"
+>
 	<div
 		aria-hidden="true"
 		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
@@ -85,10 +87,10 @@
 			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
 		></div>
 	</div>
-	<h4 class="text-center text-lg font-medium uppercase tracking-widest text-primary-500">About Us</h4>
-	<div
-		class=" max-w-full  px-4 py-4  sm:px-6 sm:py-6 md:px-10 md:py-10 lg:px-16 lg:py-16"
-	>
+	<h4 class="text-center text-lg font-medium uppercase tracking-widest text-primary-500">
+		About Us
+	</h4>
+	<div class=" max-w-full px-4 py-4 sm:px-6 sm:py-6 md:px-10 md:py-10 lg:px-16 lg:py-16">
 		<div class="grid grid-cols-1 items-center gap-4 sm:gap-6 md:grid-cols-2 md:gap-20">
 			<div class="order-1 lg:order-2">
 				<h1 class="heading mb-4 text-2xl font-extrabold text-base-800 md:text-3xl">
@@ -99,9 +101,9 @@
 					class="first-paragraph-hero mb-4 text-base font-semibold text-base-800 sm:mb-6 sm:text-lg md:text-xl"
 				>
 					Patentry Hub is a patent drafting company with 10 years of experience in utility patents,
-					design patents, trade dress, and trademark illustrations. Our team includes Project
-					Managers, skilled Drafters, and Quality Reviewers who work together to ensure every
-					drawing meets the required standards of global patent offices.
+					design patents, trade dress, and trademark illustrations. Our team of experts comprises
+					proficient Drafters and Quality Reviewers who collaborate to guarantee that each drawing
+					satisfies the requirements set forth by international patent offices.
 				</p>
 
 				<p class="second-paragraph-hero mb-4 text-base text-base-600 sm:mb-6 sm:text-lg md:text-xl">
@@ -115,18 +117,14 @@
 					requirements of different industries.
 				</p>
 			</div>
-			<div class="initial-content order-2 lg:order-1 relative ">
-				<div
-					class="absolute inset-0 bg-[#004F9F] rounded-lg z-0" 
-				></div>
+			<div class="initial-content relative order-2 lg:order-1">
+				<div class="absolute inset-0 z-0 rounded-lg bg-[#004F9F]"></div>
 				<img
 					src="/imgs/about-hero-img1.webp"
 					alt="who we are"
-					class="relative z-10 h-full w-full rounded-lg object-cover ml-2 mb-2"
+					class="relative z-10 mb-2 ml-2 h-full w-full rounded-lg object-cover"
 				/>
 			</div>
 		</div>
 	</div>
 </div>
-
-

@@ -50,15 +50,15 @@
 							<h1
 								class="text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
 							>
-								Crafting Precision Visuals for Your IP Success
+								Creating Accurate Visuals for the Success of Your Intellectual Property
 							</h1>
 							<p
 								class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none"
 							>
-								We specialize in creating precise, compliant patent drawings, trademarks, logos,
-								flowcharts, and CAD designs. Our expert team ensures your intellectual property is
-								visually compelling, meeting strict guidelines to support seamless patent filings
-								and brand protection.
+								We specialize in creating precise patent drawings, trademarks, logos, flowcharts,
+								and CAD designs. Our team of experts ensures your intellectual property is visually
+								compelled by meeting strict guidelines to support seamless patent filings and brand
+								protection.
 							</p>
 						</div>
 						<div

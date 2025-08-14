@@ -82,16 +82,16 @@
 
 	<div class="pricing-grid grid grid-cols-1 gap-4 lg:grid-cols-4">
 		<div class="pricing-card">
-			<PricingCard heading="Utility Drawings" title="Per Figure" price="$25-$35" />
+			<PricingCard heading="Utility Drawings" title="Per Page" price="$25-$35" />
 		</div>
 		<div class="pricing-card">
-			<PricingCard heading="Design drawings" title="Per Figure" price="$35-$45" />
+			<PricingCard heading="Design drawings" title="Per Page" price="$35-$45" />
 		</div>
 		<div class="pricing-card">
-			<PricingCard heading="Trademark drawings" title="Per Figure" price="$30-$40" />
+			<PricingCard heading="Trademark drawings" title="Per Page" price="$30-$40" />
 		</div>
 		<div class="pricing-card">
-			<PricingCard heading="Hourly charge" title="Per Figure" price="$20" />
+			<PricingCard heading="Hourly charge" title="Per Page" price="$20" />
 		</div>
 	</div>
 </div>

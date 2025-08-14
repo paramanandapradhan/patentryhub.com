@@ -12,7 +12,7 @@
 		gsap.from('.service-heading-h4', {
 			opacity: 0,
 			y: 80,
-			duration: 1.5,
+			duration: 1.2,
 			ease: 'power3.out',
 			scrollTrigger: {
 				trigger: '.service-heading-h4',
@@ -24,7 +24,7 @@
 		gsap.from('.service-heading-h1', {
 			opacity: 0,
 			y: 80,
-			duration: 1.5,
+			duration: 1.2,
 			ease: 'power3.out',
 			scrollTrigger: {
 				trigger: '.service-heading-h1',

@@ -47,8 +47,8 @@
 			<div class="flex-1 text-left">
 				<p class="text-lg font-medium text-base-900 md:text-xl">Address</p>
 				<p class="text-sm text-base-800 md:text-lg">
-					# Plot No 9, Sainikpuri, Defence Colony, Near Saibaba Temple, Hyderabad-500094, Telangana,
-					India.
+					Plot No: 74, 3rd Floor, Akshay Tech Park, EPIP Zone, Whitefield Road, Bangalore, Karnataka
+					- 560066
 				</p>
 			</div>
 		</div>

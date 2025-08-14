@@ -143,32 +143,27 @@
 	<!-- Static Features from Original -->
 	<div class="absolute bottom-14 left-0 right-0 z-20 hidden w-full justify-center sm:block">
 		<dl
-			class="hero-content mx-auto mt-8 grid w-full grid-cols-1 gap-x-6 gap-y-8 px-4 text-white sm:mt-10 sm:grid-cols-2 sm:gap-y-12 sm:px-6 lg:grid-cols-4 lg:px-8"
+			class="hero-content mx-auto mt-8 grid w-full grid-cols-1 gap-x-6 gap-y-8 px-4 text-white sm:mt-10 sm:gap-y-12 sm:px-6 lg:grid-cols-3 lg:px-8"
 		>
-			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-				<dt class="text-sm/6">Transform your concept into a clear, patent-ready draft.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
-					Connect the lines.
-				</dd>
-			</div>
-			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-				<dt class="text-sm/6">Precision drawings that meet global patent office standards.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
-					Accuracy in every line.
-				</dd>
-			</div>
-			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
-				<dt class="text-sm/6">Exceptional drafting that reflects the value of your invention.</dt>
-				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
-					Driven by quality.
-				</dd>
-			</div>
 			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
 				<dt class="text-sm/6">
 					Secure your innovation with professional patent support you can trust.
 				</dt>
 				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
 					Protect your ideas.
+				</dd>
+			</div>
+			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
+				<dt class="text-sm/6">Transform your concept into a clear, patent-ready draft.</dt>
+				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
+					Connect the lines.
+				</dd>
+			</div>
+
+			<div class="flex flex-col gap-y-3 border-l border-white/10 pl-6">
+				<dt class="text-sm/6">Exceptional drafting that reflects the value of your invention.</dt>
+				<dd class="order-first text-2xl font-semibold tracking-tight sm:text-3xl">
+					Driven by quality.
 				</dd>
 			</div>
 		</dl>
