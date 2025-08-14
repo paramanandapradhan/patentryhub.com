@@ -19,11 +19,11 @@
 		// Trim inputs
 		name = (name || '').trim();
 		email = (email || '').trim();
-		// phone = (phone || '').trim();
-		// message = (message || '').trim();
+		phone = (phone || '').trim();
+		message = (message || '').trim();
 
 		// Validate required fields
-		if (name && email) {
+		if (name && message && (email || phone)) {
 			try {
 				const response = await fetch('https://formspree.io/f/xzzvzgyd', {
 					method: 'POST',
@@ -42,6 +42,8 @@
 					// Reset form fields
 					name = '';
 					email = '';
+					phone = '';
+					message = '';
 				} else {
 					showToast({ msg: 'Failed to send message. Please try again later.' });
 				}
@@ -58,20 +60,20 @@
 <div class="relative isolate mx-auto my-16 bg-white p-0.5 px-4 md:my-32 md:px-16 lg:px-32">
 	<div
 		aria-hidden="true"
-		class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+		class="pointer-events-none absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
 	>
 		<div
 			style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-			class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
+			class="pointer-events-none ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc]"
 		></div>
 	</div>
 	<div
 		aria-hidden="true"
-		class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+		class="pointer-events-none absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
 	>
 		<div
 			style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-			class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+			class="pointer-events-none ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
 		></div>
 	</div>
 	<div class=" z-10 p-6 md:p-8">
@@ -104,13 +106,24 @@
 						/>
 					</div>
 
-					<!-- <div>
-						<PhoneField placeholder="Phone" bind:value={phone} size="lg" />
-					</div>
-
 					<div>
-						<TextareaField placeholder="Message" bind:value={message} size="lg" />
-					</div> -->
+						<input
+							type="tel"
+							name="phone"
+							placeholder="Phone"
+							bind:value={phone}
+							class="w-full rounded-lg border border-base-700 bg-white px-4 py-4 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+						/>
+					</div>
+					<div>
+						<textarea
+							name="message"
+							placeholder="Message"
+							bind:value={message}
+							rows="4"
+							class="w-full rounded-lg border border-base-700 bg-white px-4 py-3 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+						></textarea>
+					</div>
 
 					<div>
 						<Button

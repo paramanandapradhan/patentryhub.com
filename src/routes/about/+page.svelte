@@ -9,7 +9,7 @@
 </script>
 
 <div class="min-h-full">
-	<AppNavbar hasLogo hasTitle />
+	<AppNavbar hasLogo  />
 	<div>
 		<AboutHeroSection />
 	</div>

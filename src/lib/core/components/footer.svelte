@@ -12,7 +12,7 @@
 	import Newsletter from '$lib/common/components/newsletter.svelte';
 </script>
 
-<div class="mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 lg:px-8">
+<div class="mx-auto h-full w-full max-w-7xl items-center px-6 pb-32 pt-24 sm:pt-32 lg:px-8">
 	<div
 		class="grid grid-cols-1 gap-10 text-center text-base-200 md:grid-cols-2 lg:grid-cols-4 lg:text-left"
 	>
@@ -22,40 +22,40 @@
 			<div class="flex items-center gap-4">
 				<a href="/">
 					<img
-						src="/icons/web/icon-192.png"
+						src="patentryhub-log-full.png"
 						alt="logo"
 						class=" !h-8 !w-auto !object-contain !filter"
 					/>
 				</a>
-				<h1 class="text-center text-2xl font-black text-primary-600">PatentryHub</h1>
+				
 			</div>
 			<div class="flex gap-3">
 				<a
-					href="https://www.facebook.com/HelloCallai"
+					href="/"
 					class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-primary-600 p-1 transition hover:bg-primary-600 hover:text-white"
 				>
 					<Icon path={mdiFacebook} className="h-16 w-16 text-black  hover:text-white" />
 				</a>
 				<a
-					href="https://www.instagram.com/hellocall.ai/"
+					href="/"
 					class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-primary-600 p-1 transition hover:bg-primary-600 hover:text-white"
 				>
 					<Icon path={mdiInstagram} className="h-16 w-16  text-black  hover:text-white" />
 				</a>
 				<a
-					href="https://x.com/hellocallai"
+					href="/"
 					class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-primary-600 p-1 transition hover:bg-primary-600 hover:text-white"
 				>
 					<Icon path={mdiTwitter} className="h-16 w-16  text-black  hover:text-white" />
 				</a>
 				<a
-					href="https://www.linkedin.com/company/crawlink-networks/about/"
+					href="/"
 					class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-primary-600 p-1 transition hover:bg-primary-600 hover:text-white"
 				>
 					<Icon path={mdiLinkedin} className="h-16 w-16  text-black  hover:text-white" />
 				</a>
 				<a
-					href="https://www.youtube.com/@hellocallai"
+					href="/"
 					class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-primary-600 p-1 transition hover:bg-primary-600 hover:text-white"
 				>
 					<Icon path={mdiYoutube} className="h-16 w-16  text-black  hover:text-white" />

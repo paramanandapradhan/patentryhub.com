@@ -12,13 +12,12 @@
 <div class="">
 	<Navbar
 		hasLogo
-		logoImgSrc="/icons/web/icon-192.png"
+		logoImgSrc="patentryhub-log-full.png"
 		logoImgClassName="!h-8 !w-auto !object-contain !filter"
-		className = ' bg-gradient-to-r from-base-100 to-base-50 !h-20 border-b border-base-400'
+		className=" bg-gradient-to-r from-base-100 to-base-50 !h-20 border-b border-base-400"
 		hasTitle
 		hasSubtitle
-		title="PatentryHub"
-		titleClassName = '!text-primary-600 !font-black'
+		titleClassName="!text-primary-600 !font-black"
 		subtitle="Privacy Policy"
 		hasBack
 		onBack={goBack}
@@ -31,8 +30,8 @@
 				<p class="mb-8 text-sm text-base-400">Last updated: 01 August 2025</p>
 
 				<p class="mb-4 text-base-700">
-					These terms and conditions outline the rules and regulations for the use of
-					PatentryHub Website, located at https://patentryhub.com.
+					These terms and conditions outline the rules and regulations for the use of PatentryHub
+					Website, located at https://patentryhub.com.
 				</p>
 				<p class="mb-4 text-base-700">
 					By accessing this website we assume you accept these terms and conditions. Do not continue
@@ -49,8 +48,8 @@
 
 				<h3 class="mb-4 text-xl font-semibold text-base-800">Cookies</h3>
 				<p class="mb-4 text-base-700">
-					We employ the use of cookies. By accessing https://patentryhub.com, you agreed to use cookies
-					in agreement with the PatentryHub&#x27;s Privacy Policy.
+					We employ the use of cookies. By accessing https://patentryhub.com, you agreed to use
+					cookies in agreement with the PatentryHub&#x27;s Privacy Policy.
 				</p>
 
 				<h3 class="mb-4 text-xl font-semibold text-base-800">License</h3>

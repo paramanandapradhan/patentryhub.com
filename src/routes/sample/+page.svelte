@@ -7,7 +7,7 @@
 </script>
 
 <div class="min-h-full">
-	<AppNavbar hasLogo hasTitle />
+	<AppNavbar hasLogo />
     <div>
         <SampleCard />
     </div>

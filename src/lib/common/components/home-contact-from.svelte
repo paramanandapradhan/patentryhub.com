@@ -1,5 +1,6 @@
 <script lang="ts">
 	import {
+		Button,
 		CheckboxField,
 		CountryComboboxField,
 		EmailField,
@@ -64,6 +65,13 @@
 	}
 </script>
 
+<div class="py-6 text-center">
+	<h2 class="text-2xl font-bold text-base-900 md:text-3xl">
+		First 3 drawings free on your first order
+	</h2>
+	<p class="mt-2 text-lg text-base-700">Contact us to get started</p>
+	<div class="mt-4 mx-auto h-1 w-[30%] bg-primary-500 rounded-full"></div>
+</div>
 <form id="contact-form" class="space-y-5" onsubmit={handleSubmit}>
 	<div class="p-6">
 		<div>
@@ -76,7 +84,7 @@
 				maxlength={25}
 				floatingLabel={false}
 				bind:value={name}
-				size="lg"
+				
 			/>
 		</div>
 
@@ -86,44 +94,39 @@
 				name="email"
 				type="email"
 				bind:value={email}
-				size="lg"
+				
 				className="!bg-white !text-base-800 mb-4"
 				floatingLabel={false}
 			/>
 		</div>
 
 		<div>
-			<PhoneField
+			<input
+				type="tel"
 				name="phone"
 				placeholder="Phone"
 				bind:value={phone}
-				size="lg"
-				floatingLabel={false}
-				dialCode="+91"
-        className="!bg-white !text-base-800 mb-4 border border-gray-300"
+				class="mb-4 w-full rounded-lg border border-base-700 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 			/>
 		</div>
 		<div>
-			<CountryComboboxField
+			<input
+				type="text"
 				name="country"
-				label="Country"
+				placeholder="Country"
 				bind:value={country}
-				maxlength={50}
-				floatingLabel={false}
-        size="lg"
-        className="!bg-white !text-base-800 mb-4 border border-gray-300"
+				class="mb-4 w-full rounded-lg border border-base-700 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 			/>
 		</div>
 
 		<div>
-			<TextareaField
+			<textarea
 				name="message"
 				placeholder="Message"
 				bind:value={message}
-				size="lg"
-				floatingLabel={false}
-        className="!bg-white !text-base-800 mb-4 border border-gray-300"
-			/>
+				rows="4"
+				class="mb-4 w-full rounded-lg border border-base-700 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+			></textarea>
 		</div>
 
 		<div class="flex gap-x-4 sm:col-span-2">

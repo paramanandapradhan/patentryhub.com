@@ -12,12 +12,11 @@
 <div class="">
 	<Navbar
 		hasLogo
-		logoImgSrc="/icons/web/icon-192.png"
+		logoImgSrc="patentryhub-log-full.png"
 		logoImgClassName="!h-8 !w-auto !object-contain !filter"
 		className=" bg-gradient-to-r from-base-100 to-base-50 !h-20 border-b border-base-400"
 		hasTitle
 		hasSubtitle
-		title="PatentryHub"
 		titleClassName="!text-primary-600 !font-black"
 		subtitle="Privacy Policy"
 		hasBack

@@ -10,6 +10,7 @@ export async function openContactDialog() {
 		cancelable: true,
 		hasTitle: true,
 		title: 'Contact Us',
+		titleClassName: '!text-black',
 		hasHeaderBack: isMobileScreen(),
 		hasHeaderClose: !isMobileScreen(),
 		size: isMobileScreen() ? DialogSizeEnum.FULL : DialogSizeEnum.LG,
@@ -18,7 +19,9 @@ export async function openContactDialog() {
 		hasFooterOkButton: true,
 		footerOkButtonLabel: "let's talk",
 		targetFormId: 'contact-form',
-		className:'!bg-white'
+		className:'!bg-white',
+		headerCloseIconClassName:'!text-black',
+		headerCloseButtonClassName:'!bg-white hover:bg-white/30',
 	});
 
 	return res;

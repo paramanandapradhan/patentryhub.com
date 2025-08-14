@@ -10,7 +10,7 @@
 	let {
 		hasBack,
 		disabledLogo,
-		logoImgSrc = '/icons/web/icon-192.png',
+		logoImgSrc = 'patentryhub-log-full.png',
 		logoImgClassName = '!h-8 !w-auto !object-contain !filter ',
 		className = ' bg-gradient-to-r from-base-100 to-base-50 !h-20 border-b border-base-400',
 		hasLogo,

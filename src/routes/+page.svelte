@@ -16,19 +16,19 @@
 		await openContactDialog();
 	}
 
-	// onMount(() => {
-	// 	let timer = setTimeout(() => {
-	// 		handleOpenContactForm();
-	// 	}, 3000); // show after 3 second
+	onMount(() => {
+		let timer = setTimeout(() => {
+			handleOpenContactForm();
+		}, 2000); // show after 3 second
 
-	// 	return() => {
-	// 		clearTimeout(timer); // cleanup on component destroy
-	// 	}
-	// });
+		return() => {
+			clearTimeout(timer); // cleanup on component destroy
+		}
+	});
 </script>
 
 <div class="min-h-full">
-	<AppNavbar hasLogo hasTitle />
+	<AppNavbar hasLogo  />
 
 	<div>
 		<HeroSection />
