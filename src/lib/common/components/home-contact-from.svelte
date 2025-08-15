@@ -29,7 +29,7 @@
 		// Validate required fields
 		if (name && email && country && message && phone) {
 			try {
-				const response = await fetch('https://formspree.io/f/xzzvzgyd', {
+				const response = await fetch('https://formspree.io/f/xqaljgwk', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'

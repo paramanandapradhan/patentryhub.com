@@ -25,14 +25,16 @@
 		// Validate required fields
 		if (name && message && (email || phone)) {
 			try {
-				const response = await fetch('https://formspree.io/f/xzzvzgyd', {
+				const response = await fetch('https://formspree.io/f/mqaljgpq', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json'
 					},
 					body: JSON.stringify({
 						name,
-						email
+						email,
+						phone,
+						message
 					})
 				});
 
