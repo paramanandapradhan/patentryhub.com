@@ -114,7 +114,7 @@
 							name="phone"
 							placeholder="Phone"
 							bind:value={phone}
-							class="w-full rounded-lg border border-base-700 bg-white px-4 py-4 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+							class="w-full rounded-lg border border-base-500 bg-white px-4 py-4 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 						/>
 					</div>
 					<div>
@@ -123,7 +123,7 @@
 							placeholder="Message"
 							bind:value={message}
 							rows="4"
-							class="w-full rounded-lg border border-base-700 bg-white px-4 py-3 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+							class="w-full rounded-lg border border-base-500 bg-white px-4 py-3 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 						></textarea>
 					</div>
 

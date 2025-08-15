@@ -1,14 +1,7 @@
 <script lang="ts">
-	import {
-		Button,
-		CheckboxField,
-		CountryComboboxField,
-		EmailField,
-		InputField,
-		PhoneField,
-		showToast,
-		TextareaField
-	} from '@cloudparker/moldex.js';
+	import { EmailField, InputField, showToast, type DialogExports } from '@cloudparker/moldex.js';
+
+	let { closeDialog, setResult, setOkEnabled, setOkSpinner }: DialogExports = $props();
 
 	let name: string = $state('');
 	let email: string = $state('');
@@ -28,6 +21,8 @@
 
 		// Validate required fields
 		if (name && email && country && message && phone) {
+			setOkEnabled(false);
+			setOkSpinner(true);
 			try {
 				const response = await fetch('https://formspree.io/f/xqaljgwk', {
 					method: 'POST',
@@ -59,6 +54,7 @@
 				console.error('Error submitting form:', error);
 				showToast({ msg: 'Something went wrong!' });
 			}
+			closeDialog();
 		} else {
 			showToast({ msg: 'Missing Required Fields!' });
 		}
@@ -70,7 +66,7 @@
 		First 3 drawings free on your first order
 	</h2>
 	<p class="mt-2 text-lg text-base-700">Contact us to get started</p>
-	<div class="mt-4 mx-auto h-1 w-[30%] bg-primary-500 rounded-full"></div>
+	<div class="mx-auto mt-4 h-1 w-[30%] rounded-full bg-primary-500"></div>
 </div>
 <form id="contact-form" class="space-y-5" onsubmit={handleSubmit}>
 	<div class="p-6">
@@ -84,7 +80,6 @@
 				maxlength={25}
 				floatingLabel={false}
 				bind:value={name}
-				
 			/>
 		</div>
 
@@ -94,7 +89,6 @@
 				name="email"
 				type="email"
 				bind:value={email}
-				
 				className="!bg-white !text-base-800 mb-4"
 				floatingLabel={false}
 			/>
@@ -106,7 +100,7 @@
 				name="phone"
 				placeholder="Phone"
 				bind:value={phone}
-				class="mb-4 w-full rounded-lg border border-base-700 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+				class="mb-4 w-full rounded-lg border border-base-500 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 			/>
 		</div>
 		<div>
@@ -115,7 +109,7 @@
 				name="country"
 				placeholder="Country"
 				bind:value={country}
-				class="mb-4 w-full rounded-lg border border-base-700 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+				class="mb-4 w-full rounded-lg border border-base-500 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 			/>
 		</div>
 
@@ -125,7 +119,7 @@
 				placeholder="Message"
 				bind:value={message}
 				rows="4"
-				class="mb-4 w-full rounded-lg border border-base-700 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
+				class="mb-4 w-full rounded-lg border border-base-500 bg-white px-4 py-2 text-base text-base-800 placeholder:text-base-400 focus:outline-none"
 			></textarea>
 		</div>
 
