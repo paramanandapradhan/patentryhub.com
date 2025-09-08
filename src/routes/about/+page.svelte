@@ -10,9 +10,9 @@
 
 <div class="min-h-full">
 	<AppNavbar hasLogo  />
-	<div>
+	<!-- <div>
 		<AboutHeroSection />
-	</div>
+	</div> -->
 	<div>
 		<AboutUs />
 	</div>

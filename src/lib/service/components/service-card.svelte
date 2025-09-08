@@ -21,10 +21,29 @@
 
 	// Reactive variable to track the currently displayed main image
 	let currentImage: string = $state(image || '');
+	// Reactive variable to track the current image index
+	let currentImageIndex: number = $state(0);
 
 	// Function to handle thumbnail click and update the main image
-	function handleThumbnailClick(newImage: string) {
+	function handleThumbnailClick(newImage: string, index: number) {
 		currentImage = newImage;
+		currentImageIndex = index;
+	}
+
+	// Function to navigate to the previous image
+	function goToPreviousImage() {
+		if (currentImageIndex > 0) {
+			currentImageIndex -= 1;
+			currentImage = additionalImages[currentImageIndex];
+		}
+	}
+
+	// Function to navigate to the next image
+	function goToNextImage() {
+		if (currentImageIndex < additionalImages.length - 1) {
+			currentImageIndex += 1;
+			currentImage = additionalImages[currentImageIndex];
+		}
 	}
 
 	// Variables for mouse position
@@ -104,19 +123,67 @@
 				/>
 			</div>
 		</div>
-		<!-- Thumbnail images -->
+		<!-- Thumbnails with navigation buttons -->
 		{#if additionalImages.length > 0}
-			<div class="mt-4 flex justify-center gap-2">
-				{#each additionalImages as thumb, index}
-					<button
-						class="relative h-16 w-16 overflow-hidden rounded-md border-2 {currentImage === thumb
-							? 'border-primary-600'
-							: 'border-gray-300'}"
-						onclick={() => handleThumbnailClick(thumb)}
+			<div class="relative mt-4 flex items-center justify-center">
+				<!-- Previous Button -->
+				<button
+					class="absolute left-0 z-10 rounded-full bg-primary-600 p-2 text-white disabled:opacity-50"
+					onclick={goToPreviousImage}
+					disabled={currentImageIndex === 0}
+					aria-label="Previous image"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						class="h-6 w-6"
 					>
-						<img src={thumb} alt="Thumbnail {index + 1}" class="h-full w-full object-cover" />
-					</button>
-				{/each}
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M15 19l-7-7 7-7"
+						/>
+					</svg>
+				</button>
+				<!-- Thumbnails -->
+				<div class="flex justify-center gap-2 px-10">
+					{#each additionalImages as thumb, index}
+						<button
+							class="relative h-16 w-16 overflow-hidden rounded-md border-2 {currentImage === thumb
+								? 'border-primary-600'
+								: 'border-gray-300'}"
+							onclick={() => handleThumbnailClick(thumb, index)}
+							aria-label={`Select thumbnail ${index + 1}`}
+						>
+							<img src={thumb} alt="Thumbnail {index + 1}" class="h-full w-full object-cover" />
+						</button>
+					{/each}
+				</div>
+				<!-- Next Button -->
+				<button
+					class="absolute right-0 z-10 rounded-full bg-primary-600 p-2 text-white disabled:opacity-50"
+					onclick={goToNextImage}
+					disabled={currentImageIndex === additionalImages.length - 1}
+					aria-label="Next image"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						class="h-6 w-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M9 5l7 7-7 7"
+						/>
+					</svg>
+				</button>
 			</div>
 		{/if}
 	</div>

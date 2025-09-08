@@ -98,7 +98,7 @@
 				</h1>
 				<div class=" mb-4 mt-2 w-2/3 rounded-full border-t-4 border-primary-600 lg:mb-8"></div>
 				<p
-					class="first-paragraph-hero mb-4 text-base font-semibold text-base-800 sm:mb-6 sm:text-lg md:text-xl"
+					class="first-paragraph-hero mb-2 text-base font-semibold text-base-800 sm:text-lg md:text-xl"
 				>
 					Patentry Hub is a patent drafting company with 10 years of experience in utility patents,
 					design patents, trade dress, and trademark illustrations. Our team of experts comprises
@@ -106,15 +106,20 @@
 					satisfies the requirements set forth by international patent offices.
 				</p>
 
-				<p class="second-paragraph-hero mb-4 text-base text-base-600 sm:mb-6 sm:text-lg md:text-xl">
+				<p class="second-paragraph-hero mb-2 text-base text-base-600">
 					We work with clients across the globe, providing accurate and reliable patent drawings and
 					IP illustration services to attorneys, inventors, and businesses. Our focus is on
 					precision, timely delivery, and clear communication.
 				</p>
-				<p class="third-paragraph-hero mb-4 text-base text-base-500 sm:mb-6 sm:text-lg">
+				<p class="third-paragraph-hero mb-2 text-base text-base-500">
 					With expertise in technical illustration, CAD drafting, and graphic visualization,
 					Patentry Hub is equipped to handle a wide range of projects and adapt to the unique
 					requirements of different industries.
+				</p>
+				<p class="third-paragraph-hero text-base text-base-500">
+					We specialize in creating precise patent drawings, trademarks, logos, flowcharts, and CAD
+					designs. Our team of experts ensures your intellectual property is visually compelled by
+					meeting strict guidelines to support seamless patent filings and brand protection.
 				</p>
 			</div>
 			<div class="initial-content relative order-2 lg:order-1">
@@ -122,7 +127,7 @@
 				<img
 					src="/imgs/about-hero-img1.webp"
 					alt="who we are"
-					class="relative z-10 mb-2 ml-2 h-full w-full rounded-lg object-cover"
+					class="relative z-10 mb-2 ml-2 h-[400px] w-full rounded-lg object-cover"
 				/>
 			</div>
 		</div>
